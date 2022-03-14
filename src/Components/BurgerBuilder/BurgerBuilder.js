@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Burger from "./Burger/Burger";
+import Controls from "./Controls/Controls";
 
 
 
@@ -23,10 +24,11 @@ export default class BurgerBuilder extends Component {
 
         return (
 
-            <div>
+            <div className="d-flex flex-md-row  flex-column">
 
                 <p>
                     <Burger ingredients={this.state.ingredients} />
+                    <Controls />
                 </p>
             </div>
         )
